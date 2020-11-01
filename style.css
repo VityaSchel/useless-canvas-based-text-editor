@@ -1,0 +1,55 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Helvetica', sans-serif;
+}
+.page {
+  width: 570px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+}
+canvas {
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+button {
+  border-radius: 999px;
+  padding: 10px 50px;
+  border: 0;
+  background: linear-gradient(#fff, #bbb);
+  font-size: 0.85em;
+  cursor: pointer;
+  box-shadow: 0px 2px 20px 0px rgba(255,255,255,0.35);
+  user-select: none;
+  -webkit-transition: box-shadow 0.5s ease;
+  -moz-transition: box-shadow 0.5s ease;
+  -ms-transition: box-shadow 0.5s ease;
+  -o-transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+  vertical-align: middle;
+  display: inline-block;
+  width: fit-content;
+}
+button:hover {
+  box-shadow: 0px 2px 20px 0px rgba(255,255,255,0.27);
+}
+button:focus {
+  outline: 0;
+}
+button:active {
+  outline: 0;
+  box-shadow: 0px 2px 30px 0px rgba(255,255,255,0.1);
+}
+.durka {
+  vertical-align: middle;
+  display: inline-block;
+  width: fit-content;
+}
+.warning {
+  width: 100%;
+  text-align: justify;
+}
