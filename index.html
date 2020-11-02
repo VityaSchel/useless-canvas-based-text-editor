@@ -8,20 +8,22 @@
   </head>
   <body>
     <div class="page">
-      <canvas width="670" height="210"></canvas><br>
-      <button onclick="cleanthismess()">Clear</button>
-      <div class="options">
-        <input type="color" id="bgc" oninput="field_bg = this.value; redraw()" value="#ffffff">  Backgroud color</input>
-        <input type="color" id="textc" oninput="text_color = this.value; redraw()">  Text color</input>
-        <input type="checkbox" id="allowanychars" oninput="allow_any_chars = this.value"></input>
-        <label for="allowanychars">Allow all chars</label>
-      </div>
-      <label class="durka">Do not call the durka</label>
-      <button style="opacity: 0; position: absolute" id="mrfocus">GIMME FOCUS</button>
-      <p class="warning">Does not supports cyrillic, emotes, some characters and clipboard paste</p>
-      <p class="hint">But it supports spaces, selection (on single line), home/end keys, scrolling with arrow keys</p>
+    <canvas width="670" height="210"></canvas><br>
+    <button onclick="cleanthismess()">Clear</button>
+    <div class="options">
+      <input type="color" id="bgc" oninput="field_bg = this.value; redraw()" value="#ffffff">  Backgroud</input>
+      <input type="color" id="textc" oninput="text_color = this.value; redraw()">  Text</input>
+      <input type="range" min="1" step="0.5" max="2" value="1" oninput="multiplier = this.value; reset_window()">Size</input>
+      <input type="checkbox" id="allowanychars" oninput="allow_any_chars = this.value"></input>
+      <label for="allowanychars">Allow all chars</label>
     </div>
-    <div id="font-loaded">test</div>
+    <label class="durka">Do not call the durka</label>
+    <button style="opacity: 0; position: absolute" id="mrfocus">GIMME FOCUS</button>
+    <p class="warning">Does not supports cyrillic, emotes, some characters and clipboard paste</p>
+    <p class="hint">But it supports spaces, selection (on single line), home/end keys and scrolling</p>
+  </div>
+  <div id="font-not-loaded">test</div>
+  <div id="font-loaded">test</div>
     <script src="./script.js?v=1.1"></script>
   </body>
 </html>
